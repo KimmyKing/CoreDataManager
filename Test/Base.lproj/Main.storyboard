@@ -57,7 +57,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3K0-ky-Yv4"/>
                                 </constraints>
-                                <state key="normal" title="增"/>
+                                <state key="normal" title="修改性别"/>
+                                <connections>
+                                    <action selector="changeGender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WO2-Eg-U9Y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqJ-ho-gQu">
                                 <rect key="frame" x="0.0" y="130" width="375" height="30"/>

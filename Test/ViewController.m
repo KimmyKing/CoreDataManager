@@ -101,4 +101,10 @@
     }
 }
 
+//MARK: -
+//MARK: --修改性别
+- (IBAction)changeGender:(id)sender {
+    [Manager updateWithAttribute:[NSNumber numberWithBool:1] key:@"gender" tableName:Table_People predicate:@"name='KimmyKing' OR age>10"];
+}
+
 @end

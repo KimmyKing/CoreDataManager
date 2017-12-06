@@ -14,4 +14,6 @@
 
 @property (nonatomic , copy)NSString *name;
 
+@property (nonatomic , strong)NSNumber *gender;
+
 @end
