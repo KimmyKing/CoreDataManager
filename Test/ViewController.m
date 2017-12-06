@@ -83,7 +83,7 @@
 //MARK: -
 //MARK: --删
 - (IBAction)delete:(id)sender {
-    [Manager deleteDataWithTableName:Table_People predicate:nil];
+    [Manager deleteDataWithTableName:Table_People predicate:@"age=1"];
 }
 
 //MARK: -
@@ -95,13 +95,10 @@
 //MARK: -
 //MARK: --查
 - (IBAction)select:(id)sender {
-    NSArray *arr = [Manager selectWithKey:@"age" tableName:Table_People predicate:@"name='KimmyKing'"];
+    NSArray *arr = [Manager selectWithTableName:Table_People predicate:@"age>10"];
     for (People *p in arr) {
         NSLog(@"%@今年%@岁了",p.name,p.age);
     }
 }
-
-
-
 
 @end

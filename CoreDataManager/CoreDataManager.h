@@ -27,6 +27,6 @@
 
 //MARK: -
 //MARK: --查询数据
-- (NSArray *)selectWithKey:(NSString *)key tableName:(NSString *)tableName predicate:(NSString *)predicateString;
+- (NSArray *)selectWithTableName:(NSString *)tableName predicate:(NSString *)predicateString;
 
 @end

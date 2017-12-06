@@ -84,7 +84,7 @@ static CoreDataManager *_manager;
 
 //MARK: -
 //MARK: --查询数据
-- (NSArray *)selectWithKey:(NSString *)key tableName:(NSString *)tableName predicate:(NSString *)predicateString
+- (NSArray *)selectWithTableName:(NSString *)tableName predicate:(NSString *)predicateString
 {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:tableName];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
